@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>National Park Finder</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Locate a National Park</h1>
+      <form id="search-info">
+        <label for="search-state">State Code (GA, FL, CO, etc.)</label>
+        <input type="text" name="search-state" id="input-state" required><br>
+        <label for="max-results">How many results to return</label>
+        <input type="text" name="max-results" id="input-results" value="10"><br>
+        <input type="submit" value="Search">
+      </form>
+    </div>
+    <section id="results" class="hidden">
+      <h2>Search Results</h2>
+      <ul id="results-list">
+      </ul>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
